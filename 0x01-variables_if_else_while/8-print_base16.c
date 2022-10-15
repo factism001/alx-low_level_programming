@@ -9,13 +9,18 @@ int main(void)
 	int i;
 	char c;
 
-	for (i = 0; i <= 10; i++)
+	i = 0;
+	while (i <= 10)
 	{
 		putchar(i + '0');
+		i++;
 	}
-	for (c = 'a'; c < 'g'; c++)
+
+	c = 'a';
+	while (c < 'g')
 	{
 		putchar(c);
+		c++;
 	}
 	putchar('\n');
 
