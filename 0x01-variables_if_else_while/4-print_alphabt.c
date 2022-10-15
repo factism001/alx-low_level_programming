@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 /**
   * main - entry point
   * description: prints all lowercase alphabets except q and e
