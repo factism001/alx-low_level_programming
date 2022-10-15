@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
   * main - entry point
   * description: prints all lowercase alphabets except q and e
@@ -9,9 +9,9 @@ int main(void)
 	char c;
 
 	c = 'a';
-	for (c <= 'z')
+	for (c <= 'z';)
 	{
-		if (c != q || c != e)
+		if (c != 'q' || c != 'e')
 		{
 			putchar(c);
 		}
