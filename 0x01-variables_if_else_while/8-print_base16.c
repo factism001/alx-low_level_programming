@@ -10,7 +10,7 @@ int main(void)
 	char c;
 
 	for (i = 0; i <= 10; i++)
-		putchar(i % 9 + '0');
+		putchar(i % 10 + '-');
 
 	for (c = 'a'; c < 'g'; c++)
 		putchar(c);
