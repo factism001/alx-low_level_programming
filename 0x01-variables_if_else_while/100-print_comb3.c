@@ -13,11 +13,11 @@ int main(void)
 
 	while (first < 58)
 	{
-		putchar(first);
+		putchar(first + '0');
 		second++;
 	} while (second < 58)
 	{
-		putchar(second);
+		putchar(second + '0');
 		first++;
 	}
 	if (first < 58 && second < 58)
