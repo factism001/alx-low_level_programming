@@ -11,19 +11,20 @@ int main(void)
 	first = 48;
 	second = 48;
 
+	while (second < 58)
+	{
+		first = 48;
 	while (first < 58)
 	{
-		putchar(first + '0');
+		putchar(second);
+		putchar(first);
+		if (first == 57 && second == 57)
+		{
+			putchar(',');
+			putchar(' ');
+			first++;
+		}
 		second++;
-	} while (second < 58)
-	{
-		putchar(second + '0');
-		first++;
-	}
-	if (first < 58 && second < 58)
-	{
-		putchar(',');
-		putchar(' ');
 	}
 	putchar('\n');
 
