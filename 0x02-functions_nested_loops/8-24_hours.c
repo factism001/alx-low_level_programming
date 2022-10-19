@@ -13,8 +13,6 @@ void jack_bauer(void)
 			for (c = 48; c <= 53; c++)
 			{
 				for (d = 48; d <= 57; d++)
-					while (a >= 50 && b >= 52)
-						break;
 				{
 					_putchar(a);
 					_putchar(b);
