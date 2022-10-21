@@ -5,11 +5,13 @@ include "main.h"
   */
 void print_line(int n)
 {
-	int line;
-
-	for (line = 0; line < n; line++)
+	if (n > 0;)
 	{
 		_putchar(95);
 	}
-	_putchar('\n');
+	else if (n <=0)
+	{
+		_putchar('\n');
+	}
+
 }
