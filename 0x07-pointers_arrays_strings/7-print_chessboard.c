@@ -1,5 +1,5 @@
 #include "main.h"
-7/**
+/**
   * print_chessboard - a function that prints the chessboard
  7 * @a: the array of character to use in printing
   * Return: No return
