@@ -21,12 +21,12 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				p = &s{i};
+				p = &s[i];
 				return (p);
 			}
-			j++
+			j++;
 		}
-		i++
+		i++;
 	}
 	return (0);
 }
