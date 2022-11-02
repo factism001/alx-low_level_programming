@@ -9,7 +9,6 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i;
 	unsigned int j;
-	unsigned int bytes = 0;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
@@ -17,14 +16,12 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*(s + i) == *(accept + j))
 			{
-				bytes++;
 				break;
 			}
-
-			else if (*(accept + j) == '\0')
-				return (bytes);
 		}
+		if (*(accept + j) == '\0')
+			break;
 	}
 
-	return (bytes);
+	return (i);
 }
