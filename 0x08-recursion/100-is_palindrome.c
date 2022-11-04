@@ -6,9 +6,10 @@
   */
 int is_palindrome(char *s)
 {
-	if (s == " ")
+	unsingned int length = 0;
+	if (s[lenght] <= 0)
 		return (1);
 	else
 		return (0);
-	return (*s is_palindrome(s + 1));
+	return (s * is_palindrome(s + 1));
 }
