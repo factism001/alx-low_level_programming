@@ -6,7 +6,8 @@
   */
 int is_palindrome(char *s)
 {
-	unsingned int length = 0;
+	unsigned int lenght = 0;
+
 	if (s[lenght] <= 0)
 		return (1);
 	else
