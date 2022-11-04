@@ -3,7 +3,7 @@
   * main - a program that multiplies two numbers
   * @argc: the number of arguement passed
   * @argv: the array that contains the arguement passed
-  * Return: 0 if sucess and Error if not
+  * Return: 0 - success
   */
 int main(int argc, char *argv[])
 {
