@@ -12,15 +12,11 @@ int main(int argc, char *argv[])
 	int i;
 	int sum = 0;
 
-	if (argc > 0)
+	if ((argc > 0) && (argv[] == '\0'))
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (argv[] == '\0')
-			{
-				printf("0\n");
-			}
-			else if (!isdigit(argv[i])
+			if (!isdigit(argv[i])
 					printf("Error\n");
 					return (1);
 		}
