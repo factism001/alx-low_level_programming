@@ -5,7 +5,7 @@
   * main - program to add positive numbers
   * @argc: number of command line arguments
   * @argv: array that contains the arguments passed in the program
-  * Return: 0 - sucess
+  * Return: 0 - Success
   */
 int main(int argc, char *argv[])
 {
