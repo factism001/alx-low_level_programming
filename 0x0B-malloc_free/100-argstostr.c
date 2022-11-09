@@ -21,7 +21,9 @@ char *argstostr(int ac, char **av)
 	}
 	total++;
 
+	new_string = str;
+
 	for (j = 0; j != '\0'; j++)
-		str[i][j] = new_string;
+		av[i][j] = *str;
 	return (new_string);
 }
