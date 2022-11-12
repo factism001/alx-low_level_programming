@@ -9,7 +9,7 @@
   */
 int mul(int num1, int num2)
 {
-	int n;
+	int n, i, j;
 
 	if (!isdigit(num1 && num2))
 	{
@@ -25,11 +25,11 @@ int mul(int num1, int num2)
 		exit(98);
 	}
 
-	for (num1 = 0; num1 < 9; num1++)
+	for (i = 0; num1[i] < 9; num1++)
 		;
-	for (num2 = 0; num2 < 9; num2++)
+	for (j = 0; num2[j] < 9; num2++)
 		;
-	mul = num1 * num2;
+	num1[i] * num2[j] = mul
 
 	printf("%d\n", mul);
 
