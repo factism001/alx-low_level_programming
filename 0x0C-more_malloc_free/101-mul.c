@@ -18,11 +18,9 @@ int mul(int num1, int num2)
 		exit(98);
 	}
 
-	n = 2;
+	n = num1 && num2;
 
-	ptr = malloc(2 * sizeof(ptr));
-
-	if (n < 2)
+	if ((n != num1) && (n != num2))
 	{
 		printf("Error\n");
 		exit(98);
