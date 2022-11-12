@@ -30,9 +30,9 @@ int mul(int num1, int num2)
 		;
 	for (num2 = 0; num2 < 9; num2++)
 		;
-	ptr = mul = num1 * num2;
+	mul = num1 * num2;
 
-	printf("%d\n", ptr);
+	printf("%d\n", mul);
 
 	return (mul);
 }
