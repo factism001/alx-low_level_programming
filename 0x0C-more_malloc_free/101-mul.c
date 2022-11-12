@@ -7,29 +7,27 @@
   * @num2: the second number
   * Return: pointer to the function
   */
-int mul(int num1, int num2)
+int main(int argc, char *argv[])
 {
-	int n, i, j;
+	int i, j;
 
-	if (!isdigit(num1 && num2))
+	if (!isdigit(argv[1] && argv[2]))
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	n = num1 && num2;
+	if (argc < 3)
 
-	if ((n != num1) && (n != num2))
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	for (i = 0; num1[i] < 9; num1++)
+	for (i = 0; argv[i] !='\0'; i ++)
 		;
-	for (j = 0; num2[j] < 9; num2++)
-		;
-	num1[i] * num2[j] = mul
+	for (j = 0; argv[j] != '\0'; j++)
+		argv[i][j] = mul;
 
 	printf("%d\n", mul);
 
