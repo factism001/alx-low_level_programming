@@ -9,7 +9,6 @@
   */
 int mul(int num1, int num2)
 {
-	int ptr;
 	int n;
 
 	if (!isdigit(num1 && num2))
