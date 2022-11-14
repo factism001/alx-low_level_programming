@@ -7,28 +7,26 @@
   */
 int main(void)
 {
-	int i, j;
-
-	int i = num1;
-	int j = num2;
+	int num1;
+	int num2;
 
 
-	if (!isdigit(i || j))
+	if (!isdigit(num1 || num2))
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	if (i < 0 || j < 0)
+	if (num1 < 0 || num2 < 0)
 
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	#define mul(i, j) ((i) * (j))
+	#define mul(num1, num2) ((num1) * (num2))
 
-	printf("%d\n", mul(i, j);
+	printf("%d\n", mul);
 
 	return (0);
 }
