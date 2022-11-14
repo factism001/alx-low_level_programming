@@ -26,7 +26,7 @@ int main(void)
 
 	#define mul(num1, num2) ((num1) * (num2))
 
-	printf("%d\n", mul);
+	printf("%d\n", mul(num1, num2));
 
 	return (0);
 }
