@@ -2,34 +2,33 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
-  * mul - function that multiplies two numbers
-  * @num1: the first number
-  * @num2: the second number
-  * Return: pointer to the function
+  * main - program that multiplies two numbers
+  * Return: Always 0
   */
-int main(int argc, char *argv[])
+int main(void)
 {
 	int i, j;
 
-	if (!isdigit(argv[1] && argv[2]))
+	int i = num1;
+	int j = num2;
+
+
+	if (!isdigit(i || j))
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	if (argc < 3)
+	if (i < 0 || j < 0)
 
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	for (i = 0; argv[i] !='\0'; i ++)
-		;
-	for (j = 0; argv[j] != '\0'; j++)
-		argv[i][j] = mul;
+	#define mul(i, j) ((i) * (j))
 
-	printf("%d\n", mul);
+	printf("%d\n", mul(i, j);
 
-	return (mul);
+	return (0);
 }
