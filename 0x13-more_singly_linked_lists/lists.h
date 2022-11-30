@@ -13,7 +13,7 @@ typedef struct list_int_s
 {
 	int n;
 	struct list_int_s *next;
-} list_int_t;
+} listint_t;
 
 /**
   * struct listp_s - singly linked list
@@ -26,7 +26,7 @@ typedef struct listp_s
 	struct listp_s *next;
 } listp_t;
 
-size_t print_listint(const listint_t *h);
+isize_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *add_nodeint_end(listint_t **head, const int n);
