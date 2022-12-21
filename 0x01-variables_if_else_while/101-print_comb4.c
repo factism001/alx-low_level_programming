@@ -5,7 +5,9 @@
  */
 void print_combinations(void)
 {
-	for (int i = 0; i <= 9; i++)
+	int i;
+
+	for (i = 0; i <= 9; i++)
 	{
 		putchar('0' + i / 4);
 		putchar('0' + (i / 2) % 2);
