@@ -8,7 +8,9 @@
  */
 void print_times_table(int n)
 {
-	int i, j, k;
+	int i, j, k, result, index;
+
+	char buffer[5];  /*buffer for storing a sing    le number as a string*/
 
 	/*Check if n is out of range*/
 	if (n < 0 || n > 15)
@@ -16,14 +18,12 @@ void print_times_table(int n)
 		return;
 	}
 
-	char buffer[5];  /*buffer for storing a single number as a string*/
-
 	for (i = 0; i <= n; i++)
 	{
 		for (j = 0; j <= n; j++)
 		{
-			int result = i * j;
-			int index = 0;  /*index for writing characters to the buffer*/
+			result = i * j;
+			index = 0;  /*index for writing characters to the buffer*/
 
 			do {
 				buffer[index++] = '0' + result % 10;  /*store the last digit in buffer*/
