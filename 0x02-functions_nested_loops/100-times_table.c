@@ -8,6 +8,8 @@
  */
 void print_times_table(int n)
 {
+	int i, j, k;
+
 	/*Check if n is out of range*/
 	if (n < 0 || n > 15)
 	{
@@ -15,8 +17,6 @@ void print_times_table(int n)
 	}
 
 	char buffer[5];  /*buffer for storing a single number as a string*/
-
-	int i, j, k;
 
 	for (i = 0; i <= n; i++)
 	{
@@ -33,10 +33,10 @@ void print_times_table(int n)
 			/* print the buffer in reverse order.*/
 			for (k = index - 1; k >= 0; k--)
 			{
-				putchar(buffer[k]);
+				_putchar(buffer[k]);
 			}
-			putchar(' ');  /* print a space after each number*/
+			_putchar(' ');  /* print a space after each number*/
 		}
-		putchar('\n');  /* print a newline after each row*/
+		_putchar('\n');  /* print a newline after each row*/
 	}
 }
