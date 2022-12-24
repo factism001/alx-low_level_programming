@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 /**
  * print_buffer - Prints the contents of a buffer in hexadecimal and ASCII.
