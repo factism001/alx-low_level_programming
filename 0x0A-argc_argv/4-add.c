@@ -10,18 +10,27 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int sum, nondigit = 0;
+	int sum = 0;
+	char *p;
+
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
+	}
 
 	for (i = 0; i < argc; i++)
 	{
-		for (nondigit = 0; argv[i][nondigit] != '\0'; nondigit++)
+		p = argv[i];
+		while (*p)
 		{
-			if (!isdigit(argv[i][nondigit]))
+			if (!isdigit(*p))
 			{
 				printf("Error\n");
 				return (1);
 			}
-		}
+			p++;
+	}
 		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
