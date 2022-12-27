@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 /**
   * main - a program that prints the minimum number of coins to make change
   * @argc: number of command line arguement
@@ -32,7 +33,7 @@ int main(int argc, char *argv[])
 		else if (cents >= 1)
 			cents -= 1;
 
-		num_coin += 1
+		num_coin += 1;
 
 	}
 	printf("%d\n", num_coin);
