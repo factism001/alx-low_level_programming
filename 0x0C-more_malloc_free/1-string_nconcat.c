@@ -1,77 +1,45 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
- * string_nconcat - concatenates two strings.
- * @s1: the first string to concatenate
- * @s2: the second string to concatenate
- * @n: the number of bytes of s2 to include in the concatenated string
- * Return: a pointer to the concatenated string, or NULL if the function fails
- */
+  * string_nconcat - a function that concatenate two strings
+  * @s1: the source string
+  * @s2: the destination string
+  * @n: the number of character in 's2'
+  * Return: Pointer to function or NULL if failure
+  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	size_t s1_len = 0;
-	if (s1)
-	{
-		char *p = s1;
-		while (*p)
-		{
-			s1_len++;
-			p++;
-		}
-	}
+	char *ptr;
+	unsigned int i, j, c, new_string;
 
-	size_t s2_len = 0;
-	if (s2)
-	{
-		char *p = s2;
-		while (*p)
-		{
-			s2_len++;
-			p++;
-		}
-	}
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	if (n >= s2_len)
-	{
-		n = s2_len;
-	}
+	for (i = 0; s1[i] != '\0'; i++)
+		;
 
-	char *concat_str = malloc(s1_len + n + 1);
-	if (!concat_str)
-	{
+	for (j = 0; s2[j] != '\0'; j++)
+		;
+
+	if (n > j)
+		n = j;
+
+	new_string = i + n;
+
+	ptr = malloc(new_string + 1);
+
+	if (ptr == NULL)
 		return (NULL);
-	}
 
-	char *p = concat_str;
-	if (s1)
+	for (c = 0; c < new_string; c++)
 	{
-		while (*s1)
-		{
-			*p = *s1;
-			p++;
-			s1++;
-		}
-	}
-	if (s2)
-	{
-		while (n-- > 0)
-		{
-			*p = *s2;
-			p++;
-			s2++;
-		}
+		ptr[c] = s1[i];
+		ptr[c] = s2[i];
 	}
 
-	*p = '\0';
+	ptr[c] = '\0';
 
-	return (concat_str);
+	return (ptr);
 }
-
-/**
- * free - deallocates the memory pointed to by ptr, which was previously
- * allocated using malloc. If ptr is NULL, the function does nothing. If ptr
- * was not allocated using malloc, the behavior of this function is undefined.
- *
- * @ptr: the memory to deallocate
- */
-void free(void *ptr);
