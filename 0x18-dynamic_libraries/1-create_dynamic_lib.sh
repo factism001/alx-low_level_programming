@@ -1,3 +1,3 @@
-#!/usr/bin/bash
+i#!/usr/bin/bash
 gcc -Wall -c -fPIC *.c
-gcc -shared -o liball.so *.o
+gcc -shared *.o -o liball.so
